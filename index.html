@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>AVIATOR HACK PRO</title>
+
+<!-- META PIXEL -->
+
+<script>
+!function(f,b,e,v,n,t,s)
+{
+if(f.fbq)return;
+n=f.fbq=function(){
+n.callMethod ?
+n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+};
+
+if(!f._fbq)f._fbq=n;
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+
+}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '981209767889267');
+fbq('track', 'PageView');
+</script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#050816;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+overflow:hidden;
+color:white;
+position:relative;
+}
+
+/* BACKGROUND GLOW */
+
+body::before{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:radial-gradient(circle,#ff000055,transparent 70%);
+top:-100px;
+left:-100px;
+animation:move1 6s infinite alternate;
+}
+
+body::after{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:radial-gradient(circle,#00d9ff44,transparent 70%);
+bottom:-120px;
+right:-120px;
+animation:move2 7s infinite alternate;
+}
+
+@keyframes move1{
+0%{transform:translate(0,0);}
+100%{transform:translate(60px,60px);}
+}
+
+@keyframes move2{
+0%{transform:translate(0,0);}
+100%{transform:translate(-60px,-60px);}
+}
+
+/* CARD */
+
+.card{
+width:100%;
+max-width:420px;
+background:rgba(10,15,30,0.92);
+border-radius:30px;
+padding:30px 24px;
+text-align:center;
+backdrop-filter:blur(14px);
+border:1px solid rgba(255,255,255,0.08);
+box-shadow:
+0 0 30px rgba(0,0,0,0.5),
+0 0 80px rgba(0,140,255,0.08);
+position:relative;
+z-index:10;
+}
+
+/* LOGO */
+
+.logo-wrap{
+display:flex;
+justify-content:center;
+margin-bottom:22px;
+}
+
+.logo{
+width:170px;
+height:170px;
+border-radius:50%;
+padding:5px;
+background:linear-gradient(
+45deg,
+#ff0000,
+#ff7300,
+#00d9ff,
+#0066ff,
+#ff0000
+);
+
+background-size:400% 400%;
+animation:glow 5s linear infinite;
+
+box-shadow:
+0 0 25px #ff0000,
+0 0 45px #0066ff,
+0 0 65px #00d9ff;
+}
+
+.logo img{
+width:100%;
+height:100%;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #08111f;
+}
+
+@keyframes glow{
+0%{background-position:0% 50%;}
+100%{background-position:400% 50%;}
+}
+
+/* TITLE */
+
+.title{
+font-size:38px;
+font-weight:900;
+margin-bottom:10px;
+background:linear-gradient(90deg,#00d9ff,#ffffff,#ff3131);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+letter-spacing:1px;
+}
+
+/* BADGE */
+
+.badge{
+display:inline-block;
+padding:8px 18px;
+border-radius:30px;
+background:#ff000020;
+border:1px solid #ff3131;
+color:#ff6666;
+font-size:14px;
+font-weight:700;
+margin-bottom:18px;
+}
+
+/* SUBTEXT */
+
+.subtitle{
+font-size:16px;
+line-height:1.7;
+color:#d7dce5;
+margin-bottom:24px;
+}
+
+/* FEATURES */
+
+.features{
+text-align:left;
+margin-bottom:24px;
+}
+
+.features div{
+background:#101a2d;
+padding:14px;
+border-radius:14px;
+margin-top:12px;
+font-size:15px;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+/* BUTTON */
+
+.btn{
+display:block;
+width:100%;
+text-decoration:none;
+padding:18px;
+border-radius:16px;
+margin-top:20px;
+font-size:20px;
+font-weight:800;
+color:white;
+background:linear-gradient(90deg,#ff0000,#ff4d00);
+transition:0.3s;
+box-shadow:0 0 25px rgba(255,0,0,0.4);
+}
+
+.btn:hover{
+transform:scale(1.03);
+box-shadow:0 0 40px rgba(255,0,0,0.7);
+}
+
+/* TIMER */
+
+.timer{
+margin-top:18px;
+font-size:18px;
+font-weight:700;
+color:#00d9ff;
+}
+
+/* DISCLAIMER */
+
+.disclaimer{
+margin-top:28px;
+font-size:13px;
+line-height:1.7;
+padding:15px;
+border-radius:14px;
+background:#0f1728;
+color:#b5bfd0;
+border:1px solid rgba(255,255,255,0.04);
+}
+
+/* FOOTER */
+
+.footer{
+margin-top:24px;
+font-size:14px;
+font-weight:700;
+color:#ff5b5b;
+}
+
+/* MOBILE */
+
+@media(max-width:480px){
+
+.logo{
+width:145px;
+height:145px;
+}
+
+.title{
+font-size:30px;
+}
+
+.subtitle{
+font-size:15px;
+}
+
+.btn{
+font-size:18px;
+padding:16px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<!-- LOGO -->
+
+<div class="logo-wrap">
+
+<div class="logo">
+
+<img src="https://i.ibb.co/qMtNXHd7/Whats-App-Image-2026-03-17-at-9-44-37-PM.jpg">
+
+</div>
+
+</div>
+
+<!-- TITLE -->
+
+<div class="title">
+AVIATOR HACK PRO
+</div>
+
+<div class="badge">
+🔥 LIVE PREDICTION SYSTEM
+</div>
+
+<div class="subtitle">
+Get instant Aviator signals, crash prediction tricks,
+VIP community access, and daily winning strategies.
+Limited access available today.
+</div>
+
+<!-- FEATURES -->
+
+<div class="features">
+
+<div>✅ Daily Aviator Prediction Updates</div>
+
+<div>✅ VIP Telegram Community Access</div>
+
+<div>✅ Beginner Friendly Guide</div>
+
+<div>✅ Real-Time Winning Strategy</div>
+
+</div>
+
+<!-- BUTTON -->
+
+<a href="https://t.me/+kTfdLO7LHchmYWNl"
+class="btn"
+onclick="trackJoin()">
+
+🚀 JOIN TELEGRAM NOW
+
+</a>
+
+<!-- TIMER -->
+
+<div class="timer" id="timerText">
+Redirecting in 5 seconds...
+</div>
+
+<!-- DISCLAIMER -->
+
+<div class="disclaimer">
+
+Disclaimer: This page is for educational and entertainment
+purposes only. We do not guarantee profits or fixed outcomes.
+Users should participate responsibly and verify information independently.
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+⚡ Powered By JACK BOSS
+</div>
+
+</div>
+
+<!-- SCRIPT -->
+
+<script>
+
+function trackJoin(){
+
+fbq('track', 'Subscribe');
+fbq('trackCustom', 'TelegramJoin');
+
+}
+
+// AUTO REDIRECT
+
+let seconds = 5;
+
+const timer = document.getElementById("timerText");
+
+const countdown = setInterval(() => {
+
+seconds--;
+
+timer.innerHTML = `Redirecting in ${seconds} seconds...`;
+
+if(seconds <= 0){
+
+clearInterval(countdown);
+
+trackJoin();
+
+window.location.href = "https://t.me/+kTfdLO7LHchmYWNl";
+
+}
+
+},1000);
+
+</script>
+
+</body>
+</html>
