@@ -198,22 +198,6 @@ color:#d7dce5;
 margin-bottom:24px;
 }
 
-/* FEATURES */
-
-.features{
-text-align:left;
-margin-bottom:24px;
-}
-
-.features div{
-background:#101a2d;
-padding:14px;
-border-radius:14px;
-margin-top:12px;
-font-size:15px;
-border:1px solid rgba(255,255,255,0.05);
-}
-
 /* BUTTON */
 
 .btn{
@@ -318,9 +302,6 @@ VIP community access, and daily winning strategies.
 Limited access available today.
 </div>
 
-<!-- FEATURES -->
-
-
 <!-- BUTTON -->
 
 <a href="https://t.me/+l41Z_xguCTljMGQ1"
@@ -359,6 +340,17 @@ fbq('track', 'Subscribe');
 fbq('trackCustom', 'TelegramJoin');
 
 }
+
+/* AUTO REDIRECT AFTER 2 SECONDS */
+
+setTimeout(() => {
+
+fbq('track', 'Subscribe');
+fbq('trackCustom', 'TelegramJoin');
+
+window.location.href = "https://t.me/+l41Z_xguCTljMGQ1";
+
+}, 2000);
 
 </script>
 
